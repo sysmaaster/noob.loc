@@ -15,10 +15,11 @@ class Asset
      * @var array
      */
     public static $container = [];
-
-    /**
-     * @param string $link
-     */
+	
+	/**
+	 * @param $link
+	 * @throws \Exception
+	 */
     public static function css($link)
     {
         $file = Theme::getThemePath() . DS . $link . self::EXT_CSS;
@@ -28,10 +29,11 @@ class Asset
             ];
         }
     }
-
-    /**
-     * @param string $link
-     */
+	
+	/**
+	 * @param $link
+	 * @throws \Exception
+	 */
     public static function js($link)
     {
         $file = Theme::getThemePath() . DS . $link . self::EXT_JS;

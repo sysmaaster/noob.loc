@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="<?=\Engine\Core\Config\Config::item(baseUrl) ?>/content/themes/default/favicon.ico">
 
     <title><?php Theme::title() ?></title>
 
@@ -24,7 +25,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="//localhost/">
+            <a class="navbar-brand" href="<?=\Engine\Core\Config\Config::item(baseUrl) ?>">
                 <?php echo Setting::get('name_site'); ?>
             </a>
         </div>

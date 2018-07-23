@@ -145,12 +145,14 @@ class Theme
     {
         static::$data = $data;
     }
-
-    /**
-     * @return string
-     */
+	
+	/**
+	 * @return string
+	 * @throws \Exception
+	 */
     public static function getThemePath()
     {
-        return ROOT_DIR . '/content/themes/default';
+	    $currentTheme = Config::item('defaultTheme');
+        return ROOT_DIR . '/content/themes/' . $currentTheme;
     }
 }

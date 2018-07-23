@@ -15,8 +15,6 @@
     <!-- Custom styles for this template -->
     <link href="/admin/Assets/css/dashboard.css" rel="stylesheet">
 
-    <!-- Redactor CSS -->
-    <link rel="stylesheet" href="/admin/Assets/js/plugins/redactor/redactor.css">
 </head>
 <body>
 <header>

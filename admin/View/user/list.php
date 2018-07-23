@@ -29,28 +29,38 @@
                 <?php foreach($users as $user): ?>
                 <tr>
                     <th scope="row">
-                        <?= $user->id ?>
+                        <?= $user->user_id ?>
                     </th>
                     <td>
-                        <a href="/admin/user/edit/<?= $user->id ?>">
-                        <?= $user->name . ' ' . $user->lastname?>
+                        <a href="/admin/user/edit/<?= $user->user_id ?>">
+                        <?= $user->user_name . ' ' . $user->user_lastname?>
                         </a>
                     </td>
 
                     <td>
-                        <?= $user->date ?>
+                        <?= $user->user_day . '-' . $user->user_month . '-' . $user->user_year ?>
                     </td>
 
                     <td>
-                        <?= $user->email ?>
+                        <?= $user->user_email ?>
                     </td>
 
                     <td>
-                        <?= $user->role ?>
+                        <? if($user->user_group == '1') {
+		                        return 'User';
+	                        } elseif ($user->user_group == '2') {
+		                        return 'User2';
+	                        } elseif ($user->user_group == '3') {
+		                        return 'User3';
+	                        } elseif ($user->user_group == '4') {
+		                        return 'Moder';
+	                        } elseif ($user->user_group == '5') {
+		                        print 'Admin';
+	                        } ?>
                     </td>
 
                     <td>
-                        <?= $user->date_reg ?>
+                        <?= $user->user_reg_date ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

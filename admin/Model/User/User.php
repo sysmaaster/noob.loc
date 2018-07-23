@@ -11,7 +11,7 @@ class User
     /**
      * @var string
      */
-    protected $table = 'user';
+    protected $table = 'users';
 
     /**
      * @var User id

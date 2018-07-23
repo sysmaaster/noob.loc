@@ -50,7 +50,7 @@ trait ActiveRecord
             $this->queryBuilder
                 ->select()
                 ->from($this->getTable())
-                ->where('id', $this->id)
+                ->where('user_id', $this->id)
                 ->sql(),
             $this->queryBuilder->values
         );
