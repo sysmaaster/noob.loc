@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="right-toolbar">
+            <div class="right-toolbar"><?= $_SESSION['auth_user']['user_name'] . ' ' . $_SESSION['auth_user']['user_lastname'] ?>
                 <a href="/admin/logout/">
                     <i class="ico-logout"></i> <?= $lang->dashboardMenu['logout'] ?>
                 </a>

@@ -8,5 +8,10 @@ class HomeController extends CmsController
     {
         $this->view->render('index');
     }
-
+	
+	public function home()
+	{
+		$this->view->render('home');
+	}
+ 
 }

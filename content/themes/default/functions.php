@@ -8,5 +8,4 @@ Asset::css('vendor/font-awesome/css/font-awesome.min');
 Asset::js('vendor/jquery/jquery.min');
 Asset::js('vendor/bootstrap/js/bootstrap.min');
 Asset::js('js/jqBootstrapValidation');
-Asset::js('js/contact_me');
 Asset::js('js/clean-blog.min');

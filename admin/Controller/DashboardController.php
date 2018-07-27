@@ -1,12 +1,12 @@
 <?php
 
 namespace Admin\Controller;
-use Engine\DI\DI;
 
 class DashboardController extends AdminController
 {
     public function index()
     {
+	    print_r($_SESSION);
         // Load models
         $this->load->model('User');
 

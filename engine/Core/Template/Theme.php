@@ -152,7 +152,12 @@ class Theme
 	 */
     public static function getThemePath()
     {
-	    $currentTheme = Config::item('defaultTheme');
+	    $currentTheme = \Setting::get('activeTheme');
+	    if ($currentTheme == '') {
+		    $currentTheme = \Engine\Core\Config\Config::item('defaultTheme');
+	    }
+	    
+	    
         return ROOT_DIR . '/content/themes/' . $currentTheme;
     }
 }

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$USER_HOME$/AppData/Local/Temp/Temp1_vii_engine_4.0.zip/Движок/.htaccess" charset="windows-1251" />
-    <file url="file://$USER_HOME$/AppData/Local/Temp/Temp1_vii_engine_4.0.zip/Движок/system/inc/db.php" charset="UTF-8" />
-    <file url="file://$USER_HOME$/AppData/Local/Temp/Temp1_vii_engine_4.0.zip/Движок/system/inc/login.php" charset="UTF-8" />
-    <file url="file://$USER_HOME$/AppData/Local/Temp/Temp1_vii_engine_4.0.zip/Движок/system/inc/users.php" charset="windows-1251" />
-    <file url="file://$USER_HOME$/AppData/Local/Temp/Temp1_vii_engine_4.0.zip/Движок/system/init.php" charset="windows-1251" />
-    <file url="file://$USER_HOME$/Downloads/vii_engine_4.0/Движок/.htaccess" charset="windows-1251" />
+    <file url="file://D:/sysMaaster/Model/vii_engine_4.0/Движок/system/inc/users.php" charset="windows-1251" />
   </component>
 </project>

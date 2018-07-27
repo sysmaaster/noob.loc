@@ -34,6 +34,7 @@ class LoginController extends Controller
 
     public function form()
     {
+	    print_r($_SESSION);
         $this->view->render('login');
     }
 
@@ -61,11 +62,15 @@ class LoginController extends Controller
                 $sql = $queryBuilder
                     ->update('users')
                     ->set(['user_hid' => $hash])
-                    ->where('id', $user->user_id)->sql();
+	                ->where('user_id', $user->user_id)->sql();
 
                 $this->db->execute($sql, $queryBuilder->values);
+	
+	            $old_array = (array) $user;
+	            $new_array = array( 'user_id' => '', 'user_email' => '', 'user_name' => '', 'user_lastname' => '', 'user_sex' => '', 'user_photo' => '');
+	            $users = array_intersect_key($old_array, $new_array);
 
-                $this->auth->authorize($hash);
+                $this->auth->authorize($users, $hash);
 
                 header( 'Location: /admin/login/');
                 exit;

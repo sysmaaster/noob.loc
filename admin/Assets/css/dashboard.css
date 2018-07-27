@@ -1,3 +1,9 @@
+.bg {
+    /* The image used */
+    height          : 100%;
+    background      : url("/admin/Assets/img/bg_image.jpg") no-repeat center;
+    background-size : cover;
+    }
 .right-toolbar{
     width: 200px;
     text-align: right;
