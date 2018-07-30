@@ -17,52 +17,52 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Email</th>
-                    <th>Role</th>
-                    <th>Date Reg</th>
+                    <th><?= $lang->dashboardMain['id'] ?></th>
+                    <th><?= $lang->dashboardMain['name'] ?></th>
+                    <th><?= $lang->dashboardMain['date'] ?></th>
+                    <th><?= $lang->dashboardMain['email'] ?></th>
+                    <th><?= $lang->dashboardMain['role'] ?></th>
+                    <th><?= $lang->dashboardMain['date_reg'] ?></th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php foreach($users as $user): ?>
-                <tr>
-                    <th scope="row">
-                        <?= $user->user_id ?>
-                    </th>
-                    <td>
-                        <a href="/admin/user/edit/<?= $user->user_id ?>">
-                        <?= $user->user_name . ' ' . $user->user_lastname?>
-                        </a>
-                    </td>
+                    <tr>
+                        <th scope="row">
+                            <?= $user->user_id ?>
+                        </th>
+                        <td>
+                            <a href="/admin/user/edit/<?= $user->user_id ?>">
+                                <?= $user->user_name . ' ' . $user->user_lastname?>
+                            </a>
+                        </td>
 
-                    <td>
-                        <?= $user->user_day . '-' . $user->user_month . '-' . $user->user_year ?>
-                    </td>
+                        <td>
+                            <?= $user->user_day . '-' . $user->user_month . '-' . $user->user_year ?>
+                        </td>
 
-                    <td>
-                        <?= $user->user_email ?>
-                    </td>
+                        <td>
+                            <?= $user->user_email ?>
+                        </td>
 
-                    <td>
-                        <? if($user->user_group == '1') {
-		                        return 'User';
-	                        } elseif ($user->user_group == '2') {
-		                        return 'User2';
-	                        } elseif ($user->user_group == '3') {
-		                        return 'User3';
-	                        } elseif ($user->user_group == '4') {
-		                        return 'Moder';
-	                        } elseif ($user->user_group == '5') {
-		                        print 'Admin';
-	                        } ?>
-                    </td>
+                        <td>
+                            <? if($user->user_group == '1') {
+                                return 'User';
+                            } elseif ($user->user_group == '2') {
+                                return 'User2';
+                            } elseif ($user->user_group == '3') {
+                                return 'User3';
+                            } elseif ($user->user_group == '4') {
+                                return 'Moder';
+                            } elseif ($user->user_group == '5') {
+                                print 'Admin';
+                            } ?>
+                        </td>
 
-                    <td>
-                        <?= $user->user_reg_date ?>
-                    </td>
-                </tr>
+                        <td>
+                            <?= $user->user_reg_date ?>
+                        </td>
+                    </tr>
                 <?php endforeach; ?>
                 </tbody>
             </table>

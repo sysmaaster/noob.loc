@@ -11,13 +11,13 @@
 		public function __construct(DI $di)
 		{
 			parent::__construct($di);
-			
-			
+
+
 			$this->auth = new Auth();
-			
+
 			if ($this->auth->hashUser() !== null) {
 				// redirect
-				header('Location: /home/');
+				header('Location: /');
 				exit;
 			}
 		}
@@ -25,7 +25,7 @@
 		public function form()
 		{
 			print_r($_SESSION);
-			$this->view->render('login');
+			$this->view->render('form');
 		}
 		
 		public function authUser()
@@ -62,7 +62,7 @@
 					
 					$this->auth->authorize($users, $hash);
 					
-					header( 'Location: /login/');
+					header( 'Location: /');
 					exit;
 				}
 			}

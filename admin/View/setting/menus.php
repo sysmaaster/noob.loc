@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col page-title">
-                    <h3>Menus</h3>
+                    <h3><?= $lang->dashboardMenu['menus']?></h3>
                 </div>
             </div>
             <div class="row">
@@ -17,9 +17,9 @@
             <div class="row">
                 <div class="col-4">
                     <h4 class="heading-setting-section">
-                        List menu
+                        <?= $lang->dashboardMain['list_menu'] ?>
                         <a href="javascript:void(0)" class="btn btn-primary" data-toggle="modal" data-target="#addMenu" data-whatever="@getbootstrap">
-                            Add Menu
+                            <?= $lang->dashboardMain['add_menu'] ?>
                         </a>
                     </h4>
                     <?php if(!empty($menus)): ?>
@@ -36,7 +36,7 @@
                         </div>
                     <?php else: ?>
                         <div class="empty-items">
-                            <p>You do not have any menu created</p>
+                            <p><?= $lang->dashboardMain['text3'] ?></p>
                         </div>
                     <?php endif; ?>
                 </div>

@@ -15,14 +15,14 @@
 							
 							<div class="form-row">
 								<div class="form-group col-md-5">
-									<label for="formTitle">Name</label> <input type="text" name="name"
+									<label for="formTitle"><?= $lang->dashboardMain['name'] ?></label> <input type="text" name="name"
 									                                           class="form-control" id="formName"
 									                                           value="<?= $users->user_name ?>">
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-md-5">
-									<label for="formTitle">Last Name</label> <input type="text" name="lastname"
+									<label for="formTitle"><?= $lang->dashboardMain['lastname'] ?></label> <input type="text" name="lastname"
 									                                                class="form-control"
 									                                                id="formLastName"
 									                                                value="<?= $users->user_lastname ?>">
@@ -32,13 +32,13 @@
 						
 							<div class="form-row">
 								<div class="form-group col-md-5">
-									<label for="formDate">Date</label> <input type="date" name="date"
+									<label for="formDate"><?= $lang->dashboardMain['date'] ?></label> <input type="date" name="date"
 									                                           class="form-control" id="formDate"
 									                                           value="<?= $users->user_day ?>">
 								</div>
 							</div>
 							<div class="form-group col-md-5>
-								<label for="formTitle">Role <B><? if ($users->user_group == '1') {
+								<label for="formTitle"><?= $lang->dashboardMain['role'] ?> <B><? if ($users->user_group == '1') {
 											return 'User';
 										} elseif ($users->user_group == '2') {
 											return 'User2';
@@ -62,7 +62,7 @@
 						<div class="form-inline">
 							<div class="form-row">
 								<div class="form-group col-md-5">
-									<label for="formTitle">Email</label> <input type="text" name="email"
+									<label for="formTitle"><?= $lang->dashboardMain['email'] ?></label> <input type="text" name="email"
 									                                            class="form-control" id="formEmail"
 									                                            value="<?= $users->user_email ?>">
 								</div>
@@ -70,7 +70,7 @@
 							
 							<div class="form-row">
 								<div class="form-group col-md-5">
-									<label for="formTitle">Password</label> <input type="password" name="password"
+									<label for="formTitle"><?= $lang->dashboardMain['password'] ?></label> <input type="password" name="password"
 									                                               class="form-control" autocomplete="off"
 									                                               id="formPassword" value=""
 									                                               placeholder="Change Password ...">
@@ -79,7 +79,7 @@
 						</div>
 						
 						<div class="form-group col-md-5">
-							<label for="formDate">Date Reg</label> <input type="date" name="date_reg"
+							<label for="formDate"><?= $lang->dashboardMain['date_reg'] ?></label> <input type="date" name="date_reg"
 							                                               class="form-control" id="formDateReg"
 							                                               value="<?= $users->user_reg_date ?>">
 						</div>
@@ -88,9 +88,9 @@
 				</div>
 				<div class="col-3">
 					<div>
-						<p>Update this Users</p>
+						<p><?= $lang->dashboardMain['text2']?></p>
 						<button type="submit" class="btn btn-primary" onclick="user.update()">
-							Update
+							<?= $lang->dashboardMain['update'] ?>
 						</button>
 					</div>
 				</div>

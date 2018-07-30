@@ -9,13 +9,10 @@ var setting = {
             type: this.ajaxMethod,
             data: formData,
             beforeSend: function(){
-                button.addClass('loading');
-
 
             },
             success: function(result){
                 console.log(result);
-                button.removeClass('loading');
             }
         });
     },
@@ -34,10 +31,8 @@ var setting = {
             processData: false,
             contentType: false,
             beforeSend: function(){
-                button.addClass('loading');
-
             },
-            success: function(result){
+            success: function(){
                 window.location.reload();
             }
         });

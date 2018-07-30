@@ -13,6 +13,9 @@ class SettingController extends AdminController
         $this->data['settings']  = $this->model->setting->getSettings();
         $this->data['languages'] = languages();
 
+        // Load language
+        $this->load->language('dashboard/main');
+
         $this->view->render('setting/general', $this->data);
     }
 
@@ -24,7 +27,8 @@ class SettingController extends AdminController
         $this->data['menuId']   = $this->request->get['menu_id'];
         $this->data['menus']    = $this->model->menu->getList();
         $this->data['editMenu'] = $this->model->menuItem->getItems($this->data['menuId']);
-
+        // Load language
+        $this->load->language('dashboard/main');
         $this->view->render('setting/menus', $this->data);
     }
 
@@ -34,7 +38,15 @@ class SettingController extends AdminController
         $this->data['themes'] = getThemes();
         $this->data['activeTheme'] = \Setting::get('active_theme');
 
+        // Load language
+        $this->load->language('dashboard/main');
+
         $this->view->render('setting/themes', $this->data);
+    }
+
+    public function db()
+    {
+        $this->view->render('setting/db', $this->data);
     }
 
     public function ajaxMenuAdd()

@@ -45,3 +45,6 @@ $this->router->add('user-update', '/admin/user/update/', 'UserController:update'
 $this->router->add('themes', '/admin/settings/themes/', 'SettingController:themes');
 // Themes Routes (POST)
 $this->router->add('themes-update', '/admin/settings/activateTheme/', 'SettingController:activateThemes', 'POST');
+
+// DB Routes (GET)
+$this->router->add('settings-db', '/admin/settings/db/', 'SettingController:db');

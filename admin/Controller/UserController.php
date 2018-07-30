@@ -8,6 +8,10 @@ class UserController extends AdminController
     {
         $this->load->model('User');
 
+
+        // Load language
+        $this->load->language('dashboard/main');
+
         $this->data['users'] = $this->model->user->getUsers();
         $this->view->render('user/list', $this->data);
     }
@@ -20,6 +24,10 @@ class UserController extends AdminController
     public function edit($id)
     {
         $this->load->model('User');
+
+
+        // Load language
+        $this->load->language('dashboard/main');
 
         $this->data['users'] = $this->model->user->getUserData($id);
 

@@ -5,17 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="<?=\Engine\Core\Config\Config::item(baseUrl) ?>/content/themes/default/favicon.ico">
-
     <title><?php Theme::title() ?></title>
-
     <?php Asset::render('css'); ?>
-
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
-
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -33,11 +28,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <?php foreach(Menu::getItems(1) as $item):?>
-                <li>
-                    <a href="<?= $item->link ?>"><?= $item->name ?></a>
-                </li>
-                <?php endforeach; ?>
+	            
+	
+	            <?php $dev = 2;  if (\Engine\Core\Auth\Auth::hashUser() == null)  $dev = 1?>
+	            <?php foreach(Menu::getItems($dev) as $item):?>
+		            <li>
+			            <a href="<?= $item->link ?>"><?= $item->name ?></a>
+		            </li>
+	            <?php endforeach; ?>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

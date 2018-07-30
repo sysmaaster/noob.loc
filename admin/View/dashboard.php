@@ -1,15 +1,16 @@
 <?php $this->theme->header(); ?>
 
-<main>
     <div class="container">
-        <br><br><br>
-        <div style="text-align:center;">
-            <h1><i class="icon-heart icons"></i> Welcome to Admin CMS</h1>
-                <i class="icon-social-youtube icons"></i> Developer Start
-
-            </a>
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
+                <div class="bhoechie-tab-content active">
+                    <div style="text-align: center;">
+                        <h1><?= $lang->dashboardMain['welcome'] ?></h1>
+                        <hr>
+                        <h2><?= $lang->dashboardMain['text'] ?></h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</main>
-
 <?php $this->theme->footer(); ?>

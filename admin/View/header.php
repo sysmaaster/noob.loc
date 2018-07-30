@@ -10,15 +10,15 @@
     <title>Админ-панель</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/admin/Assets/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/admin/Assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="/admin/Assets/css/dashboard.css" rel="stylesheet">
 
 </head>
 <body>
+<div id="main-background" class="main-background"/>
 <header>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-navbar">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
