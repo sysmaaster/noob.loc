@@ -16,7 +16,7 @@
 	
 // Registration Routes (POST)
 	$this->router->add('register', '/components/register/', 'LoginController:regUser', 'POST');
-
+sfsd
 
 
 
