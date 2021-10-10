@@ -41,54 +41,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="154012601">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.85" value="1" />
-          <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="5" />
-          <entry key="ini" value="9" />
-          <entry key="js" value="5" />
-          <entry key="php" value="54" />
-          <entry key="rnc" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="5" />
-          <entry key="Ini" value="9" />
-          <entry key="JavaScript" value="5" />
-          <entry key="PHP" value="54" />
-          <entry key="RNG Compact" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="106" />
-          <entry key="ini" value="257" />
-          <entry key="js" value="11" />
-          <entry key="php" value="414" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="106" />
-          <entry key="Ini" value="257" />
-          <entry key="JavaScript" value="11" />
-          <entry key="PHP" value="414" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="localhost" />
   </component>
