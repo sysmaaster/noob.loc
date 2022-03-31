@@ -13,7 +13,7 @@
             "Engine\\DI\\": "engine/DI"
         }
     },
-    "name": "qwib/cms.loc",
+    "name": "qwib/noob.loc",
     "require": {
         "ext-pdo": "*"
     }

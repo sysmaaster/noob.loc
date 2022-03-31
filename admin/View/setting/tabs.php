@@ -9,4 +9,3 @@
         </li>
     <?php endforeach; ?>
 </ul>
-<?= print_r($lang->dashboardMenu) ?>
