@@ -24,6 +24,7 @@
                                             <?= $lang->dashboardMain['language'] ?>
                                         </label>
                                         <div class="col-10">
+                                            <? print_r($languages)?>
                                             <select class="form-control" name="<?= $setting->key_field ?>"
                                                     id="formLangSite">
                                                 <?php foreach ($languages as $language): ?>

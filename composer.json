@@ -1,12 +1,10 @@
 {
-    "name": "qwib/cms.loc",
     "authors": [
         {
-            "name": "Artem Melnik",
-            "email": "zzema666@gmail.com"
+            "name": "Aleksandr A.",
+            "email": "sysmaaster@gmail.com"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "Engine\\": "engine",
@@ -14,5 +12,9 @@
             "Admin\\": "admin",
             "Engine\\DI\\": "engine/DI"
         }
+    },
+    "name": "qwib/cms.loc",
+    "require": {
+        "ext-pdo": "*"
     }
 }

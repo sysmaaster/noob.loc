@@ -30,7 +30,7 @@
             <ul class="nav navbar-nav navbar-right">
 	            
 	
-	            <?php $dev = 2;  if (\Engine\Core\Auth\Auth::hashUser() == null)  $dev = 1?>
+	            <?php $dev = 1;  if (\Engine\Core\Auth\Auth::hashUser() !== null)  $dev = 2?>
 	            <?php foreach(Menu::getItems($dev) as $item):?>
 		            <li>
 			            <a href="<?= $item->link ?>"><?= $item->name ?></a>

@@ -24,7 +24,7 @@
 		
 		public function form()
 		{
-			print_r($_SESSION);
+			//print_r($_SESSION);
 			$this->view->render('form');
 		}
 		

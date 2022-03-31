@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'baseUrl'         => 'http://socialnoob.com',
-    'defaultLang'     => 'english',
+    'baseUrl'         => 'http://noob.loc',
+    'defaultLang'     => 'ukrainian',
     'defaultTimezone' => 'America/Chicago',
     'defaultTheme'    => 'default'
 ];

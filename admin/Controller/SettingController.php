@@ -40,7 +40,6 @@ class SettingController extends AdminController
 
         // Load language
         $this->load->language('dashboard/main');
-
         $this->view->render('setting/themes', $this->data);
     }
 
